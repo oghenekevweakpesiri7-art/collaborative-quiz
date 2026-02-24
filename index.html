@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Collaborative Quiz</title>
+</head>
+<body>
+
+
+<h3>Sample Quiz Question</h3>
+
+<p>What is the capital of Nigeria?</p>
+
+<input type="radio" name="answer" onclick="checkAnswer('Abuja')"> Abuja<br>
+<input type="radio" name="answer" onclick="checkAnswer('Lagos')"> Lagos<br>
+
+<p id="result"></p>
+
+<script>
+function checkAnswer(answer) {
+    if (answer === 'Abuja') {
+        document.getElementById("result").innerHTML = "Correct!";
+    } else {
+        document.getElementById("result").innerHTML = "Wrong!";
+    }
+}
+</script>
+
+
+</body>
+</html>
